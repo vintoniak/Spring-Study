@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" ContentType="text/html/ftl;charset=UTF-8">
+    <meta charset="UTF-8" ContentType="text/html;charset=UTF-8">
     <title>Title</title>
 </head>
 <body>
-<p> Перевірка кодування хтмл</p>
 <table>
    <tr> Id </tr>
     <tr> Name </tr>
@@ -13,7 +12,7 @@
     <tr> Age </tr>
 <#list users as user>
 <tr>
-    <td>${user.id}</td>
+    <td><a href="/user/${user.id}"> ${user.id} </a> </td>
     <td>${user.name}</td>
     <td>${user.email}</td>
     <td>${user.age}</td>
